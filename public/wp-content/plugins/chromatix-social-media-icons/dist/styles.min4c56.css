@@ -1,0 +1,40 @@
+.chrsmi ul {
+  margin: 0;
+  list-style-type: none; }
+
+.chrsmi-network-wrap {
+  display: inline-block;
+  position: relative;
+  margin: 0 .5em;
+  width: 1.5em;
+  height: 1.5em;
+  list-style-type: none;
+  transition: background-color .5s; }
+  .chrsmi-network-wrap.round {
+    padding: .75em;
+    border-radius: 100%; }
+  .chrsmi-network-wrap.square {
+    padding: .75em; }
+  .chrsmi-network-wrap.nobg {
+    background-color: transparent !important; }
+
+.chrsmi-network-link {
+  position: absolute;
+  top: -.4em;
+  right: -.4em;
+  bottom: -.4em;
+  left: -.4em; }
+
+.chrsmi-network-name {
+  display: block;
+  height: 0;
+  color: transparent !important;
+  text-indent: 100%;
+  overflow: hidden; }
+
+.chrsmi-network-svg {
+  width: 100%;
+  height: 100%;
+  transition: fill .5s; }
+
+/*# sourceMappingURL=styles.min.css.map */

@@ -1,0 +1,411 @@
+/* =========================================================
+   ALL IN ONE COMBO — editable Home page section
+   Content lives in src/pages/HomePage.jsx
+   ========================================================= */
+#all-in-one-combo.all-in-one-combo {
+  background: #ffffff;
+  padding: 74px 0 82px;
+  color: #161616;
+  overflow: hidden;
+}
+
+#all-in-one-combo * {
+  box-sizing: border-box;
+}
+
+#all-in-one-combo .combo-offer-shell {
+  width: min(1325px, calc(100% - 48px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(420px, .86fr);
+  gap: clamp(52px, 7vw, 112px);
+  align-items: center;
+}
+
+#all-in-one-combo .combo-offer-copy {
+  min-width: 0;
+}
+
+#all-in-one-combo .combo-kicker {
+  margin: 0 0 0 4px;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.15;
+  font-weight: 800;
+  letter-spacing: .01em;
+}
+
+#all-in-one-combo .combo-main-title {
+  margin: 0 0 2px;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: clamp(47px, 4.2vw, 64px);
+  line-height: .98;
+  font-weight: 900;
+  letter-spacing: -.055em;
+}
+
+#all-in-one-combo .combo-script-title {
+  margin: 4px 0 27px;
+  max-width: 720px;
+  font-size: clamp(40px, 2vw, 61px);
+  line-height: .98;
+  font-weight: 400;
+  letter-spacing: -.045em;
+}
+
+#all-in-one-combo .combo-feature-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-width: 665px;
+  display: grid;
+  gap: 7px;
+}
+
+#all-in-one-combo .combo-feature-list li {
+  position: relative;
+  margin: 0;
+  padding: 0 0 0 18px;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 15.5px;
+  line-height: 1.34;
+  font-weight: 400;
+  letter-spacing: .005em;
+}
+
+
+#all-in-one-combo .combo-promo-card {
+  width: 100%;
+  max-width: 540px;
+  margin-left: auto;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #27b8c7;
+  color: #ffffff;
+  box-shadow: 0 20px 46px rgba(17, 70, 78, .08);
+}
+
+#all-in-one-combo .combo-promo-top {
+  min-height: 326px;
+  padding: 76px 54px 28px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#all-in-one-combo .combo-promo-top h3 {
+  margin: 0;
+  color: #ffffff;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: clamp(48px, 4vw, 62px);
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: -.05em;
+}
+
+#all-in-one-combo .combo-promo-subtitle {
+  margin: 9px 0 9px;
+  color: #ffffff;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(25px, 2.1vw, 34px);
+  line-height: 1.05;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -.045em;
+}
+
+#all-in-one-combo .combo-price-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+  margin-top: 3px;
+}
+
+#all-in-one-combo .combo-price {
+  color: #ffffff;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: clamp(76px, 3.8vw, 101px);
+  line-height: .9;
+  font-weight: 900;
+  letter-spacing: -.075em;
+}
+
+#all-in-one-combo .combo-old-price-wrap {
+  min-width: 128px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  transform: translateY(7px);
+}
+
+#all-in-one-combo .combo-old-price {
+  position: relative;
+  color: #ffffff;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 31px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: -.05em;
+}
+
+#all-in-one-combo .combo-old-price::after {
+  content: '';
+  position: absolute;
+  left: -9px;
+  right: -11px;
+  top: 52%;
+  height: 3px;
+  background: #ffffff;
+  transform: rotate(-1deg);
+}
+
+#all-in-one-combo .combo-old-price-wrap strong {
+  margin-top: 7px;
+  align-self: center;
+  color: #ffffff;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 900;
+}
+
+#all-in-one-combo .combo-discount {
+  min-height: 72px;
+  padding: 12px 28px;
+  background: #ffffff;
+  color: #171717;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: clamp(29px, 2.7vw, 40px);
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: -.055em;
+}
+
+#all-in-one-combo .combo-promo-bottom {
+  padding: 19px 36px 30px;
+}
+
+#all-in-one-combo .combo-contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 27px;
+}
+
+#all-in-one-combo .combo-contact-item {
+  min-height: 90px;
+  padding: 10px 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+#all-in-one-combo .combo-contact-item + .combo-contact-item {
+  border-left: 4px solid rgba(255,255,255,.95);
+}
+
+#all-in-one-combo .combo-contact-item span {
+  margin-bottom: 2px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+}
+
+#all-in-one-combo .combo-contact-item a {
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 1.25;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#all-in-one-combo .combo-contact-item a:hover {
+  text-decoration: underline;
+}
+
+#all-in-one-combo .combo-start-button {
+  width: min(300px, 100%);
+  min-height: 50px;
+  margin: 0 auto;
+  padding: 0 22px 0 38px;
+  border-radius: 999px;
+  background: #1d1d1d;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: .02em;
+  text-decoration: none;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, .16);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+#all-in-one-combo .combo-start-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 22px rgba(0, 0, 0, .2);
+}
+
+#all-in-one-combo .combo-button-line {
+  position: relative;
+  width: 79px;
+  height: 2px;
+  background: #ffffff;
+  display: block;
+}
+
+#all-in-one-combo .combo-button-line i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1050px) {
+  #all-in-one-combo .combo-offer-shell {
+    grid-template-columns: minmax(0, 1fr) minmax(390px, .85fr);
+    gap: 42px;
+  }
+  #all-in-one-combo .combo-script-title {
+    font-size: clamp(38px, 4.5vw, 52px);
+  }
+  #all-in-one-combo .combo-promo-top {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 860px) {
+  #all-in-one-combo.all-in-one-combo {
+    padding: 58px 0 64px;
+  }
+  #all-in-one-combo .combo-offer-shell {
+    width: min(680px, calc(100% - 36px));
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+  #all-in-one-combo .combo-offer-copy {
+    text-align: left;
+  }
+  #all-in-one-combo .combo-promo-card {
+    max-width: 560px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 560px) {
+  #all-in-one-combo.all-in-one-combo {
+    padding: 46px 0 52px;
+  }
+  #all-in-one-combo .combo-offer-shell {
+    width: calc(100% - 28px);
+    gap: 34px;
+  }
+  #all-in-one-combo .combo-kicker {
+    font-size: 13px;
+  }
+  #all-in-one-combo .combo-main-title {
+    font-size: 46px;
+  }
+  #all-in-one-combo .combo-script-title {
+    margin-top: 7px;
+    margin-bottom: 23px;
+    font-size: 36px;
+    line-height: 1.02;
+  }
+  #all-in-one-combo .combo-desktop-break {
+    display: none;
+  }
+  #all-in-one-combo .combo-feature-list {
+    gap: 8px;
+  }
+  #all-in-one-combo .combo-feature-list li {
+    padding-left: 15px;
+    font-size: 13.5px;
+  }
+  #all-in-one-combo .combo-promo-card {
+    border-radius: 17px;
+  }
+  #all-in-one-combo .combo-promo-top {
+    min-height: 260px;
+    padding: 46px 18px 23px;
+  }
+  #all-in-one-combo .combo-promo-top h3 {
+    font-size: 49px;
+  }
+  #all-in-one-combo .combo-promo-subtitle {
+    font-size: 25px;
+  }
+  #all-in-one-combo .combo-price-row {
+    gap: 11px;
+  }
+  #all-in-one-combo .combo-price {
+    font-size: 76px;
+  }
+  #all-in-one-combo .combo-old-price-wrap {
+    min-width: 102px;
+  }
+  #all-in-one-combo .combo-old-price {
+    font-size: 24px;
+  }
+  #all-in-one-combo .combo-old-price-wrap strong {
+    font-size: 29px;
+  }
+  #all-in-one-combo .combo-discount {
+    min-height: 63px;
+    padding: 12px 16px;
+    font-size: 29px;
+  }
+  #all-in-one-combo .combo-promo-bottom {
+    padding: 17px 18px 25px;
+  }
+  #all-in-one-combo .combo-contact-grid {
+    margin-bottom: 22px;
+  }
+  #all-in-one-combo .combo-contact-item {
+    min-height: 78px;
+    padding: 8px 10px;
+  }
+  #all-in-one-combo .combo-contact-item + .combo-contact-item {
+    border-left-width: 2px;
+  }
+  #all-in-one-combo .combo-contact-item span {
+    font-size: 12.5px;
+  }
+  #all-in-one-combo .combo-contact-item a {
+    font-size: 13.5px;
+  }
+  #all-in-one-combo .combo-start-button {
+    min-height: 48px;
+    padding-left: 27px;
+    padding-right: 18px;
+  }
+}
+
+@media (max-width: 380px) {
+  #all-in-one-combo .combo-main-title { font-size: 42px; }
+  #all-in-one-combo .combo-script-title { font-size: 32px; }
+  #all-in-one-combo .combo-price { font-size: 66px; }
+  #all-in-one-combo .combo-old-price { font-size: 21px; }
+  #all-in-one-combo .combo-old-price-wrap strong { font-size: 25px; }
+  #all-in-one-combo .combo-discount { font-size: 25px; }
+}

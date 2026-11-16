@@ -1,0 +1,3 @@
+/* React-only bridge. The visual design stays in the original Chromatix/Orcanex styles. */
+#root { min-height: 100vh; }
+[data-legacy-section] { display: contents; }
